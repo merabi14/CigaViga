@@ -93,50 +93,6 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: ForeGround
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 16
-      y: 4
-      width: 7647
-      height: 2430
-    spriteID: ef5afacbacff85549b4ab92ff7ece8e9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 0, y: -1348}
-  - name: Layer 2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 7490
-      width: 7680
-      height: 1284
-    spriteID: 95c0429fcd09fe04ab9b40f844176fbb
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 7490}
-    spritePosition: {x: 0, y: 0}
   - name: FirstMountain
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -144,10 +100,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 6
-      y: 8782
-      width: 4111
-      height: 2110
+      x: 10
+      y: 1954
+      width: 4105
+      height: 1874
     spriteID: 4f72de443c9a4174f8738238b9a277ab
     spriteBone: []
     spriteOutline: []
@@ -157,8 +113,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 8782}
-    spritePosition: {x: 1877, y: -233}
+    uvTransform: {x: 4, y: 1954}
+    spritePosition: {x: 1877, y: -1016}
   - name: LastMountain
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -167,7 +123,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 5965
+      y: 6605
       width: 7680
       height: 1517
     spriteID: b35cfd59fdaa15748a2ad1f434eeedd1
@@ -179,7 +135,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 5965}
+    uvTransform: {x: 4, y: 6605}
     spritePosition: {x: 0, y: 0}
   - name: Moon
     originalName: 
@@ -189,7 +145,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2442
+      y: 4
       width: 7660
       height: 1942
     spriteID: 0ac275c782d65be459d6590ab96a56e5
@@ -201,7 +157,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 2442}
+    uvTransform: {x: 4, y: 4}
     spritePosition: {x: 28, y: 280}
   - name: Skye
     originalName: 
@@ -211,7 +167,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4392
+      y: 5032
       width: 7680
       height: 1565
     spriteID: 74ce8a3a243176140841f9c134c9a576
@@ -223,7 +179,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4392}
+    uvTransform: {x: 4, y: 5032}
     spritePosition: {x: 0, y: 0}
   characterData:
     bones: []
@@ -307,25 +263,15 @@ ScriptedImporter:
     layerID: 55
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Layer 2
-    spriteName: Layer 2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 95c0429fcd09fe04ab9b40f844176fbb
-    layerID: 59
-    mosaicPosition: {x: 4, y: 7490}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: FirstMountain
     spriteName: FirstMountain
     isGroup: 0
     parentIndex: -1
     spriteID: 4f72de443c9a4174f8738238b9a277ab
     layerID: 26
-    mosaicPosition: {x: 4, y: 8782}
+    mosaicPosition: {x: 4, y: 1954}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -335,7 +281,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b35cfd59fdaa15748a2ad1f434eeedd1
     layerID: 2
-    mosaicPosition: {x: 4, y: 5965}
+    mosaicPosition: {x: 4, y: 6605}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -345,7 +291,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 0ac275c782d65be459d6590ab96a56e5
     layerID: 27
-    mosaicPosition: {x: 4, y: 2442}
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -355,7 +301,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 74ce8a3a243176140841f9c134c9a576
     layerID: 39
-    mosaicPosition: {x: 4, y: 4392}
+    mosaicPosition: {x: 4, y: 5032}
     flatten: 0
     isImported: 1
     isVisible: 1
