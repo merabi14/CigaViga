@@ -17,6 +17,8 @@ public class Parallax : MonoBehaviour
     float textureUnitSizeX;
     float textureUnitSizeY;
 
+    Vector2 constPrallaxEffect;
+
 
     private void Start()
     {
@@ -25,25 +27,63 @@ public class Parallax : MonoBehaviour
         Sprite _sprite = GetComponent<SpriteRenderer>().sprite;
         textureUnitSizeX = _sprite.bounds.size.x;
         textureUnitSizeY = _sprite.bounds.size.y;
+
+        constPrallaxEffect = parallaxEffect;
     }
 
     private void LateUpdate()
     {
+
+        //infinite Horizontal
         if (Mathf.Abs(vmcam.position.x - transform.position.x) >= textureUnitSizeX && infiniteHorizontal)
         {
             transform.position = new Vector3(vmcam.position.x, transform.position.y);
         } 
         
-        if (transform.position.y + (textureUnitSizeY / 4) >= vmcam.position.y)
+        Vector3 _deltaMovment = vmcam.position - lastCameraPosition;
+        
+        //Parallax
+        transform.position += new Vector3(_deltaMovment.x * parallaxEffect.x, _deltaMovment.y * parallaxEffect.y);
+
+        lastCameraPosition = vmcam.position;
+
+        //infinite Vertical
+        if ((transform.position.y + (textureUnitSizeY / 4) >= vmcam.position.y))
         {
             Debug.Log("Move Back");
-            transform.position = new Vector3(transform.position.x, transform.position.y - (1f * Time.deltaTime));
+            parallaxEffect.y = 1.01f;
         }
-        
-        //Debug.Log($"X - {textureUnitSizeX} | Y - {textureUnitSizeY}");
-        
-        Vector3 _deltaMovment = vmcam.position - lastCameraPosition;
-        transform.position += new Vector3( _deltaMovment.x * parallaxEffect.x, _deltaMovment.y * parallaxEffect.y);
-        lastCameraPosition = vmcam.position;
+        else
+        {
+            parallaxEffect.y = constPrallaxEffect.y;
+            Debug.Log("Parallax Move");
+        }
+
+
+
+
+        //if (transform.position.y + (textureUnitSizeY / 4) >= vmcam.position.y)
+        //{
+        //    Debug.Log("Move Back");
+        //    countDown = 1000;
+        //    transform.position = new Vector3(transform.position.x + (_deltaMovment.x * parallaxEffect.x), transform.position.y + _deltaMovment.y);
+        //    lastCameraPosition = vmcam.position;
+        //    countDown -= 0.01f;
+        //    Debug.Log(countDown);
+        //}
+        //else if(countDown <= 0)
+        //{
+        //    Debug.Log("Parallax Move");
+        //    Debug.Log(countDown);
+        //    transform.position = new Vector3(transform.position.x + (_deltaMovment.x * parallaxEffect.x), transform.position.y + (_deltaMovment.y * parallaxEffect.y));
+        //    lastCameraPosition = vmcam.position;
+        //}
+
+            //Debug.Log($"{vmcam.position} - {lastCameraPosition} = {_deltaMovment}");
+
+
+            //Debug.Log($"X - {textureUnitSizeX} | Y - {textureUnitSizeY}");
+
+            //transform.position = new Vector3(transform.position.x + (_deltaMovment.x * parallaxEffect.x), transform.position.y + (_deltaMovment.y * parallaxEffect.y));
     }
 }
