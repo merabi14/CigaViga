@@ -102,7 +102,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 10
       y: 1954
-      width: 4105
+      width: 4103
       height: 1874
     spriteID: 4f72de443c9a4174f8738238b9a277ab
     spriteBone: []
@@ -117,14 +117,14 @@ ScriptedImporter:
     spritePosition: {x: 1877, y: -1016}
   - name: LastMountain
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.4566361, y: 0.49658558}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 5
       y: 6605
-      width: 7680
+      width: 7678
       height: 1517
     spriteID: b35cfd59fdaa15748a2ad1f434eeedd1
     spriteBone: []
@@ -139,13 +139,13 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   - name: Moon
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.45999044, y: 0.47258908}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
+      x: 69
+      y: 0
       width: 7660
       height: 1942
     spriteID: 0ac275c782d65be459d6590ab96a56e5
@@ -166,9 +166,9 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 6
       y: 5032
-      width: 7680
+      width: 7674
       height: 1565
     spriteID: 74ce8a3a243176140841f9c134c9a576
     spriteBone: []

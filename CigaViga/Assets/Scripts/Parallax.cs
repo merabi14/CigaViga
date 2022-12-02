@@ -30,7 +30,6 @@ public class Parallax : MonoBehaviour
 
     private void LateUpdate()
     {
-
         //infinite Horizontal
         if (Mathf.Abs(vmcam.position.x - transform.position.x) >= textureUnitSizeX && infiniteHorizontal)
         {
@@ -42,19 +41,13 @@ public class Parallax : MonoBehaviour
         //Parallax
         transform.position += new Vector3(_deltaMovment.x * parallaxEffect.x, _deltaMovment.y * parallaxEffect.y);
 
-        
-
-
-        if(transform.position.x < (vmcam.position.x - vmcam.position.x + cameraWidth / 4) && LoopParallax)
+        if(transform.position.x < (vmcam.position.x + 2.8f) && LoopParallax)
         {
             parallaxEffect.x = 1.001f;
-            Debug.Log("Start moving right");
-
         }
-        else if(transform.position.x >= (vmcam.position.x + cameraWidth/2) && LoopParallax)
+        else if (transform.position.x > (vmcam.position.x + cameraWidth / 2) && LoopParallax)
         {
             parallaxEffect.x = constParallaxEffect.x;
-            Debug.Log("Start moving left");
         }
         lastCameraPosition = vmcam.position;
     }
