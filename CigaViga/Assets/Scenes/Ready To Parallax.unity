@@ -407,7 +407,6 @@ GameObject:
   - component: {fileID: 1594261696}
   - component: {fileID: 1594261697}
   - component: {fileID: 1594261698}
-  - component: {fileID: 1594261699}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -485,19 +484,6 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
---- !u!114 &1594261699
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594261695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4c41ac9245b87c4192012080077d830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Damping: 0
 --- !u!1 &377401822361582168
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,10 +539,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torqueAmount: 10
   speedForce: 0.5
-  jumpForce: 2.5
+  jumpForce: 18
   layermask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!4 &377401822361582183
 Transform:
   m_ObjectHideFlags: 0

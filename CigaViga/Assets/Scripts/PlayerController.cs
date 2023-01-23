@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(transform.right * speedForce, ForceMode2D.Force);
         }
+        Debug.Log(transform.right * speedForce);
     }
     
     void PlayerJump()
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
         if (IsGrounded() && Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
-            Debug.Log("Jump Suka");
+            //Debug.Log("Jump Suka");
         }
     }
     bool IsGrounded()
